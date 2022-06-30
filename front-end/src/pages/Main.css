@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main .typo {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.main .links {
+  margin: 40px 0px;
+}
+
+.links button {
+  width: 150px;
+  height: 60px;
+  margin: 0px 100px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--green-color);
+  color: var(--white-text-color);
+}

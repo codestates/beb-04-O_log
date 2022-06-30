@@ -1,0 +1,11 @@
+.explore {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 1200px;
+  margin-top: 50px;
+}

@@ -1,0 +1,23 @@
+.comment {
+  margin: 17px;
+  border-bottom: 1px solid var(--sub-text-color);
+  padding: 5px
+}
+
+.comment .content{
+  margin-bottom: 3px;
+}
+
+.comment .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment .username {
+  font-size: 13px;
+}
+
+.comment .created_at{
+  font-size: 13px;
+  color: var(--sub-text-color)
+}

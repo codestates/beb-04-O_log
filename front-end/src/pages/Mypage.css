@@ -1,0 +1,72 @@
+.mypage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.mypage_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mypage_container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.mypage_info {
+  width: 270px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.mypage_info > .title, .mypage_comment > .title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  display: flex;
+  justify-content: start;
+  color: var(--green-color)
+}
+
+.mypage_info .username {
+  background-color: #ffffff;
+  margin: 10px;
+  width: 100%;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 7px 7px 10px 7px;
+}
+
+.username .label {
+  color: var(--sub-text-color);
+  font-size: 15px;
+}
+
+.mypage_info .posts_info{
+  background-color: #ffffff;
+  width: 100%;
+  margin: 10px 0px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.mypage_comment {
+  width: 325px;
+  margin-right: 15px;
+}

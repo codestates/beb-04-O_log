@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 5px 20px;
+  padding: 0px 20px;
+}
+
+.navbar .title{
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--green-color);
+}
+
+.navbar .navbar_link {
+  margin: 0 10px;
+  color: var(--sub-text-color)
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar .logout {
+  cursor: pointer;
+}
+
+.navbar .active {
+  font-weight: bold;
+  color: var(--green-color)
+}

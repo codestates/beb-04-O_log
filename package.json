@@ -1,0 +1,24 @@
+{
+  "name": "beb-04-o_log",
+  "version": "1.0.0",
+  "description": "beb-04-second-05",
+  "main": "./OLOG_SERVER/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "nodemon index.js",
+    "dev": "concurrently \"cd ./OLOG_SERVER && npm run backend\" \"cd ./front-end && npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt700395/beb-04-O_log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt700395/beb-04-O_log/issues"
+  },
+  "homepage": "https://github.com/matt700395/beb-04-O_log#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

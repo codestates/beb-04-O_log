@@ -1,0 +1,75 @@
+.card {
+  width: 250px;
+  margin: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card_reward {
+  position: absolute;
+  border: 1px solid #000000;
+  width: 70px;
+  z-index: 2;
+}
+
+.card_image{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  z-index: 1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card_content {
+  margin: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card_content_main{
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card_content_main > .title{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card_content .created_at{
+  margin-bottom: 7px;
+  color: var(--sub-text-color);
+  display: flex;
+  justify-content: end;
+  width: 100%;  
+}
+
+.card_content .user{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 30px;
+}
+
+.user > .image{
+  width: 30px;
+  margin-right: 7px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 7px;
+  background-color: var(--sub-text-color);
+}

@@ -1,0 +1,46 @@
+.notification-container {
+  font-size: 1rem;
+  position: fixed;
+  z-index: 999999;
+  top: 12px;
+  left: 37%;
+}
+
+.notification {
+  transition: transform .6s ease-in-out;
+  animation: toast-in-right .6s;
+  transition: .3s ease;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+  color: #000;
+  opacity: .9;
+  font-weight: 600;
+
+  height: 50px;
+  width: 360px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.notification-container .error{
+  color: red
+}
+
+.notification-container .success{
+  color: var(--green-color)
+}
+
+.fade-out {
+  opacity: 0;
+  transform: opacity 2s;
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}

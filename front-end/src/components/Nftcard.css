@@ -1,0 +1,46 @@
+.mynfts_container .nftcard {
+  width: 200px;
+  margin: 12px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.container .nftcard {
+  margin: 20px;
+  width: 200px;
+  border-radius: 5px;
+  height: 295px;
+  background-color: #ffffff;
+  position: relative;box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nftcard_image{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+
+.nftcard_content {
+  margin: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.nftcard_content > .name{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.nftcard_content .reward{
+  margin-bottom: 8px;
+  color:var(--sub-text-color)
+}
+
+.nftcard_content .price{
+}

@@ -1,0 +1,49 @@
+.mypage_posts {
+  display: flex;
+  flex-direction: column;
+  width:480px;
+  align-items: start;
+  margin-right: 15px;
+}
+
+.mypage_posts > .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  color: var(--green-color)
+}
+
+.mypost_container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.mypost_container .card {
+  margin: 10px;
+  width: 220px
+}
+
+.page_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_nums {
+  margin: 10px 0px;
+  width: 230px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--sub-text-color);
+  border-radius: 10px;
+}

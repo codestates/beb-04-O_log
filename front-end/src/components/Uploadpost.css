@@ -1,0 +1,91 @@
+.form_container {
+  margin: 40px 0;
+  background-color: var(--green-color);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 8px;
+}
+
+.form_container .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 0 8px 0;
+  color: var(--white-text-color)
+}
+
+.form_container .input_section {
+  display: flex;
+  width: 600px;
+}
+
+.form_container .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputs input{
+  border: none;
+  margin: 3px 0;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.form_container .submit button{
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.small_modal {
+  position: fixed;
+  top: 15%;
+  left: 31%;
+  width:500px;
+  background-color: #ffffff;
+  height: 150px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  z-index: 3;
+  border-radius: 10px;
+  margin: 10px
+}
+
+.small_modal .message_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px
+}
+
+.small_modal .button_area button {
+  width: 80px;
+  height: 30px;
+  margin: 10px 20px 20px 20px;
+
+}
+
+.button_area .yes_button {
+  background-color: var(--green-color);
+  color: #ffffff;
+  border:none;
+  border-radius: 10px;
+}
+
+.button_area .no_button {
+  background-color: #ffffff;
+  border: 1px solid var(--sub-text-color);
+  color: var(--sub-text-color);
+  border-radius: 10px
+}
