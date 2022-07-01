@@ -1,2 +1,3 @@
 # 오늘의 로그
-https://olog123.netlify.app/mypage/hongildong6987
+https://olog123.netlify.app/
+서버의 이더 보유상황, 히로쿠 서버상황에 따라 이용이 제한될 수 있습니다
