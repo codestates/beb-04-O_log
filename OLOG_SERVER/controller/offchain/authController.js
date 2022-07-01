@@ -20,7 +20,7 @@ module.exports = {
         return;
       }
 
-      const web3 = new Web3(process.env.LOCAL_GANACHE);
+      const web3 = new Web3(process.env.PROVIDER);
       const Account = await web3.eth.accounts.create();
 
       const newUser = new User({
@@ -68,6 +68,8 @@ module.exports = {
       const token = user.generateToken();
       res.cookie("JWT_token", token, {
         maxAge: 1000 * 60 * 60 * 24 * 7,
+        sameSite: "none",
+        secure: true,
       });
       res.status(200).send(user.hidePw());
     } catch (e) {
@@ -100,7 +102,11 @@ module.exports = {
 }
 */
   logout: (req, res) => {
-    res.cookie("JWT_token");
+    res.cookie("JWT_token", "", {
+      maxAge: 0,
+      sameSite: "none",
+      secure: true,
+    });
     res.status(200).send("로그아웃됨");
   },
 };

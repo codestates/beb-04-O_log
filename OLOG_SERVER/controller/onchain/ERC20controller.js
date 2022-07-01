@@ -2,7 +2,7 @@
 require("dotenv").config();
 let Contract = require("web3-eth-contract");
 const Web3 = require("web3");
-const { LOCAL_GANACHE, ERC20_ADDRESS, SERVER_ADDRESS, SERVER_PRIVATE_KEY } =
+const { PROVIDER, ERC20_ADDRESS, SERVER_ADDRESS, SERVER_PRIVATE_KEY } =
   process.env;
 const User = require("../../models/user");
 const ERC20_abi = require("../../truffle/build/contracts/OLOG_ERC20.json").abi;
@@ -17,7 +17,7 @@ module.exports = {
     const userwalletaddress = queryResult.address;
     if (expectedToken === 0) return res.send("Don't need to sync");
 
-    Contract.setProvider(LOCAL_GANACHE);
+    Contract.setProvider(PROVIDER);
     let contract = new Contract(ERC20_abi, ERC20_ADDRESS);
     const ERC20balance = await contract.methods
       .balanceOf(userwalletaddress)
@@ -26,7 +26,7 @@ module.exports = {
     console.log("balance before sync : ", ERC20balance);
 
     if (Number(ERC20balance) === receivedToken) {
-      const web3 = new Web3(LOCAL_GANACHE);
+      const web3 = new Web3(PROVIDER);
       //web3객체로 노드에 연결
       const txData = await contract.methods
         .mintToken(userwalletaddress, expectedToken)

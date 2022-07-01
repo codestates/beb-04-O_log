@@ -9,7 +9,7 @@ module.exports = {
     const username = res.locals.user.username;
 
     try {
-      user = await User.findByUsername(username);
+      const user = await User.findByUsername(username);
 
       res.status(200).send(user.hidePw());
     } catch (e) {
@@ -22,14 +22,11 @@ module.exports = {
     */
   read: async (req, res) => {
     const username = req.params.username;
-    console.log(username);
     const query = {
       ...(username ? { ownerName: username } : {}),
     };
-    console.log(query);
     try {
       const comments = await Comment.find(query).exec();
-      console.log(comments);
       res.status(200).send(comments);
     } catch (e) {
       res.status(404).send(e);

@@ -1,10 +1,10 @@
 require("dotenv").config();
 const Web3 = require("web3");
-const { LOCAL_GANACHE, ERC721_ADDRESS, SERVER_ADDRESS, SERVER_PRIVATE_KEY } =
+const { PROVIDER, ERC721_ADDRESS, SERVER_ADDRESS, SERVER_PRIVATE_KEY } =
   process.env;
 const ERC721_abi =
   require("../../truffle/build/contracts/OLOG_ERC721.json").abi;
-const web3 = new Web3(LOCAL_GANACHE);
+const web3 = new Web3(PROVIDER);
 
 const ERC721Contract = new web3.eth.Contract(ERC721_abi, ERC721_ADDRESS);
 
